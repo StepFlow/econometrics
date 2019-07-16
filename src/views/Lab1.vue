@@ -3,8 +3,7 @@
     <lab main-title="Лабораторная работа №1">
       <h2 id="first">Постановка задачи</h2>
       <p>Дан статистический ряд:
-      <div class="vue-mathjax-wrapper">
-        <!--        <vue-mathjax formula="`\(x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\)`"></vue-mathjax>--></div>
+<!--        <vue-mathjax formula="`\(x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\)`"></vue-mathjax>-->
       </p>
       <v-table
         :cols="initialTableCols"
@@ -13,19 +12,13 @@
       <ol>
         <li>Записать значения результатов эксперимента в виде вариационного ряда.</li>
         <li>Найти медиану
-          <div class="vue-mathjax-wrapper">
-            <vue-mathjax formula="`M_e`"></vue-mathjax>
-          </div>
+          <vue-mathjax formula="`M_e`"></vue-mathjax>
           вариационного ряда.</li>
         <li>Найти моду
-          <div class="vue-mathjax-wrapper">
-            <vue-mathjax formula="`M_0`"></vue-mathjax>
-          </div>
+          <vue-mathjax formula="`M_0`"></vue-mathjax>
           вариационного ряда.</li>
         <li>Найти размах варьирования и длину интервала, если число итервалов
-          <div class="vue-mathjax-wrapper">
-            <vue-mathjax formula="`\quad m = 9.`"></vue-mathjax>
-          </div>
+          <vue-mathjax formula="`\quad m = 9.`"></vue-mathjax>
         </li>
         <li>Построить полигон частот, гистограмму относительных частот и приближенный график эмпирической функции
           распределения.</li>
@@ -42,41 +35,25 @@
         :cols="variationRowTableCols"
       ></v-table>
       <p>Находим медиану
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax formula="`M_e`"></vue-mathjax>
-      </div>
         вариационного ряда, т.е. находим варианту,
         которая делит вариационный ряд на две части, равные по числу вариант:
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.median"></vue-mathjax>
-      </div>
       </p>
       <p>Находим моду
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax formula="`M_0`"></vue-mathjax>
-      </div>
         вариационного ряда, т.е. варианту, имеющую
         наибольшую частоту:
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.mode"></vue-mathjax>
-      </div>
         Данный вариационный ряд имеет три моды, т.к. их частоты равны {{ modeFrequency }}.
       </p>
       <p>Находим размах варьирования по формуле
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax formula="`\quad R = x_{max} - x_{min}:`"></vue-mathjax>
-      </div>
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.variationRange"></vue-mathjax>
-      </div>
       </p>
       <p>Вычисляем длину интервала по формуле
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax formula="`\quad h=\frac{x_{max} - x_{min}}{m}:`"></vue-mathjax>
-      </div>
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.intervalLength"></vue-mathjax>
-      </div>
       </p>
       <p>Все вычисления записываем в таблицу.</p>
       <v-table
@@ -100,14 +77,10 @@
 
       <h3 id="empericalFunction">Эмпирическая функция распределения</h3>
       <p>Значения эмпирической функции распределения ищем по формулам &nbsp;
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.empericalFunctionCommon"></vue-mathjax>
-      </div>
       </p>
       <p>
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.empericalFunction"></vue-mathjax>
-      </div>
       </p>
       <p>
         Строим приближенный график эмпирической функции распределения:
@@ -121,27 +94,19 @@
       <h3 id="variationRow">Числовые характеристики выборки</h3>
       <p>
         Выборочная средняя
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.sampleAverage"></vue-mathjax>
-      </div>
       </p>
       <p>
         Исправленная дисперсия
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.correctedVariance"></vue-mathjax>
-      </div>
       </p>
       <p>
         Выборочное среднее квадратичное отклонение
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.sampleStandardDeviation"></vue-mathjax>
-      </div>
       </p>
       <p>
         Выборочный коэффициент вариации
-      <div class="vue-mathjax-wrapper">
         <vue-mathjax :formula="formulas.sampleVariationCoefficient"></vue-mathjax>
-      </div>
       </p>
     </lab>
   </div>
