@@ -15,8 +15,17 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "buefy": "^0.7.10",
     "bulma": "^0.7.5",
+    "bulma-divider": "^0.2.0",
+    "cdn-loader": "^0.1.8-0",
+    "chart.js": "^2.8.0",
     "core-js": "^2.6.5",
+    "html-webpack-cdn-plugin": "^0.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mathjax": "^2.7.5",
+    "mathjs": "^6.0.3",
     "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-mathjax": "0.0.8",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {

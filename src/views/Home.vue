@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img class="vue-logo" alt="Vue logo" src="../assets/logo.png">
   </div>
 </template>
 
@@ -13,3 +13,19 @@ export default {
   }
 }
 </script>
+
+<style>
+  .home {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 84px);
+    justify-content: center;
+  }
+
+  .vue-logo {
+    display: block;
+    align-self: center;
+
+    animation: spinAround 2s infinite ease-in-out;
+  }
+</style>

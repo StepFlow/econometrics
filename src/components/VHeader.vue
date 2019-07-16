@@ -31,9 +31,9 @@
           }"
         >
           <div class="navbar-start">
-            <a class="navbar-item">
+            <router-link to="/" class="navbar-item">
               Главная
-            </a>
+            </router-link>
 
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
@@ -41,13 +41,9 @@
               </a>
 
               <div class="navbar-dropdown is-boxed">
-                <a href="#" class="navbar-item">Лабораторная работа №1</a>
-                <a href="#" class="navbar-item">Лабораторная работа №2</a>
-                <a href="#" class="navbar-item">Лабораторная работа №3</a>
-                <a href="#" class="navbar-item">Лабораторная работа №4</a>
-                <a href="#" class="navbar-item">Лабораторная работа №5</a>
-                <a href="#" class="navbar-item">Лабораторная работа №6</a>
-                <a href="#" class="navbar-item">Лабораторная работа №7</a>
+                <router-link to="/lab1" class="navbar-item">Лабораторная работа №1</router-link>
+                <router-link to="/lab1" class="navbar-item">Лабораторная работа №2</router-link>
+                <router-link to="/lab1" class="navbar-item">Лабораторная работа №3</router-link>
                 <hr class="navbar-divider">
                 <a class="navbar-item">
                   Какой-то пункт
@@ -103,7 +99,7 @@
   .header {
     &__logo {
       &--mobile {
-        height: 2.75rem;
+        /*height: 2.75rem;*/
       }
     }
   }
