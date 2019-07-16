@@ -1,4 +1,7 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/econometrics/'
+    : '/',
   css: {
     loaderOptions: {
       // pass options to sass-loader
